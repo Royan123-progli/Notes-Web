@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) !important;
+    font-family: 'Inter', -apple-system, sans-serif;
+    min-height: 100vh;
+    color: #2d3436;
+    display: block !important;
+}
+
+.navbar {
+    background: white !important;
+    height: 70px;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #6c5ce7;
+    text-decoration: none;
+}
+
+.btn-danger {
+    background: #ff7675;
+    color: white !important;
+    padding: 8px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    font-weight: 800;
+    color: #2d3436;
+}
+
+table {
+    display: block !important;
+    width: 100%;
+}
+
+thead {
+    display: none !important;
+}
+
+tbody {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    width: 100% !important;
+}
+
+tr {
+    display: flex !important;
+    flex-direction: column !important;
+    background: white !important;
+    padding: 25px !important;
+    border-radius: 20px !important;
+    border: 1px solid rgba(0,0,0,0.05) !important;
+    min-height: 220px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+tr:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+td {
+    display: block !important;
+    padding: 0 !important;
+    border: none !important;
+    text-align: left !important;
+    width: 100% !important;
+}
+
+td:nth-child(1) {
+    display: none !important;
+}
+
+td:nth-child(2) {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #2d3436;
+    margin-bottom: 15px;
+    padding-bottom: 10px !important;
+    border-bottom: 2px solid #f0eeff !important;
+}
+
+td:nth-child(3) {
+    font-size: 0.85rem;
+    background: #f8f9fa !important;
+    padding: 12px !important;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    color: #636e72;
+}
+
+td:nth-child(3)::before {
+    content: "Dibuat oleh: ";
+    font-weight: 600;
+    color: #6c5ce7;
+}
+
+td:nth-child(4) {
+    margin-top: auto;
+    display: flex !important;
+    gap: 10px;
+    width: 100% !important;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: #6c5ce7;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.btn-orange {
+    background: #ffeaa7 !important;
+    color: #d35400 !important;
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.btn-red {
+    background: #ff7675 !important;
+    color: white !important;
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.success-message {
+    background: #55efc4 !important;
+    color: #006266 !important;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    border-left: 5px solid #00b894;
+    grid-column: 1 / -1;
+}

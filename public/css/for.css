@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: 'Inter', -apple-system, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 550px; 
+}
+
+.card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 25px; 
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #2d3436;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #636e72;
+    font-size: 0.9rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 15px;
+    border: 2px solid #f1f3f5;
+    background: #f8f9fa;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #6c5ce7;
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(108, 92, 231, 0.1);
+}
+
+textarea.form-control {
+    resize: none; 
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.btn-primary {
+    background: transparent;
+    color: #6c5ce7;
+    margin-bottom: 10px;
+    padding: 0;
+    font-size: 0.9rem;
+}
+
+.btn-primary:hover {
+    text-decoration: underline;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background: #6c5ce7 !important;
+    color: white !important;
+    margin-top: 15px;
+    box-shadow: 0 8px 20px rgba(108, 92, 231, 0.2);
+}
+
+button[type="submit"]:hover {
+    background: #5b4bc4 !important;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(108, 92, 231, 0.3);
+}
+
+.error-message, .alert-danger {
+    background: #fff5f5;
+    color: #e74c3c;
+    padding: 15px;
+    border-radius: 15px;
+    border-left: 5px solid #e74c3c;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
